@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kategori_labels">
+        <item>Atasan</item>
+        <item>Bawahan</item>
+        <item>Outer</item>
+        <item>Sepatu</item>
+        <item>Aksesoris</item>
+    </string-array>
+</resources>

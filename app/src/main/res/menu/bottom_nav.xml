@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/tab_today" android:title="Beranda" />
+    <item android:id="@+id/tab_lemari" android:title="Lemari" />
+    <item android:id="@+id/tab_kalender" android:title="Kalender" />
+    <item android:id="@+id/tab_pengingat" android:title="Pengingat" />
+</menu>

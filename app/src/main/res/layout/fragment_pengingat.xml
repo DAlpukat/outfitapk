@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengingat"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pengingat cuci"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReminderTime"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jam pengingat: 20:00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Threshold stok per kategori (stok ≤ angka ini → diingatkan):" />
+
+        <LinearLayout
+            android:id="@+id/thresholdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnNagInterval"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interval nag: tiap 1 hari" />
+
+        <Button
+            android:id="@+id/btnNagStop"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Berhenti nag setelah: terus" />
+
+        <Button
+            android:id="@+id/btnQuiet"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiet hours: 22:00–08:00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Auto-Wear (jam 12)"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCutoff"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cut-off auto-wear: 12:00" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diabaikan 2 jam → dianggap &quot;Ya&quot;. Koreksi manual selalu menimpa auto." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Hari kuliah"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch android:id="@+id/sw1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Sen" />
+            <Switch android:id="@+id/sw2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Sel" />
+            <Switch android:id="@+id/sw3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Rab" />
+            <Switch android:id="@+id/sw4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Kam" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch android:id="@+id/sw5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Jum" />
+            <Switch android:id="@+id/sw6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Sab" />
+            <Switch android:id="@+id/sw7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Min" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Health Check"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Memeriksa…" />
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kirim Tes Sekarang" />
+
+        <Button
+            android:id="@+id/btnExact"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Izinkan alarm persis" />
+
+        <Button
+            android:id="@+id/btnNotifSettings"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan notifikasi app" />
+
+        <Button
+            android:id="@+id/btnOem"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panduan anti-telat per HP" />
+
+        <TextView
+            android:id="@+id/tvOem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Xiaomi (MIUI): Setelan → Aplikasi → kelola OutfitKu → Autostart ON, Battery saver → No restrictions.\nOPPO/Realme (ColorOS): Pengaturan baterai → OutfitKu → izinkan berjalan latar belakang + auto-launch.\nVivo (OriginOS): i Manager → aplikasi → OutfitKu → allow background + whitelist.\nSamsung: Setelan → Baterai → background usage limits → jangan diatur.\nHuawei: Pengaturan baterai → app launch → manual, izinkan semua.\nSemua HP: matikan &quot;optimasi baterai&quot; untuk OutfitKu &amp; nonaktifkan pembatasan CPU." />
+    </LinearLayout>
+</ScrollView>
